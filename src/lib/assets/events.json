@@ -1,0 +1,12 @@
+[
+    {
+      "title": "Unity Basics Workshop",
+      "start": "2026-02-05T17:00:00",
+      "end": "2026-02-05T19:00:00",
+      "color": "#2196f3",
+      "extendedProps": {
+        "description": "Learn the fundamentals of Unity game engine. Perfect for beginners!",
+        "location": "Computer Lab A"
+      }
+    }
+]
