@@ -7,8 +7,8 @@ To run use:
 ```
     npm run dev
 ```
-[!WARNING]
-This needs vite to run and if you don't have vite installed try running
+> [!WARNING]
+> This needs vite to run and if you don't have vite installed try running
 ```
     npm install
 ```
