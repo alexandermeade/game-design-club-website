@@ -1,7 +1,6 @@
 :root {
     --msu-blue:#2b70e4;  
     --background-color: #f5f5f5; 
-    --msu-yellow:#ffc72c;
 }
 .page {
     min-height: 100vh;
@@ -42,7 +41,7 @@
 .cta-button {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background: var(--msu-yellow); 
+    background: #ffc72c; /* MSU Yellow */
     color: var(--msu-blue);
     text-decoration: none;
     border-radius: 5px;
@@ -57,7 +56,7 @@
 
 /* Main Content */
 .container {
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
@@ -70,7 +69,7 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--msu-blue);
-    border-bottom: 3px solid var(--msu-yellow);
+    border-bottom: 3px solid #ffc72c;
     padding-bottom: 0.5rem;
     display: inline-block;
 }
@@ -80,7 +79,7 @@
     background: var(--background-color);
     padding: 2rem;
     border-radius: 8px;
-    border-left: 4px solid var(--msu-yellow);
+    border-left: 4px solid #ffc72c;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     line-height: 1.8;
 }
@@ -100,6 +99,11 @@
     border-top: 4px solid var(--msu-blue);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(43, 112, 228, 0.3);
 }
 
 .goal-card .icon {
@@ -134,6 +138,10 @@
     transition: all 0.3s;
 }
 
+.activity-card:hover {
+    border-color: #ffc72c;
+    box-shadow: 0 4px 16px rgba(255, 199, 44, 0.3);
+}
 
 .activity-icon {
     font-size: 3rem;
@@ -151,7 +159,8 @@
     line-height: 1.6;
 }
 
-@media (max-width: 900px) {
+/* Responsive */
+@media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
     }

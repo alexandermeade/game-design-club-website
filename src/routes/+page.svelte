@@ -8,8 +8,9 @@
     let options = $state({
         view: 'timeGridWeek',
         events: events,
-        slotMinTime: '15:00:00', // 3:00 PM
-        slotMaxTime: '22:00:00', // 10:00 PM
+        //times are in World time
+        slotMinTime: '15:00:00', 
+        slotMaxTime: '22:00:00', 
         eventDidMount: (info) => {
             // Add native browser tooltip on hover
             const props = info.event.extendedProps;
@@ -25,8 +26,9 @@
 	<section class="hero">
 		<div class="hero-content">
 			<img src={logo} alt="MSU Logo" class="hero-logo" />
-			<h1>Welcome to MSU Game Design Club</h1>
-			<p>A collaborative space for students to explore game design, develop projects, and connect with fellow creators</p>
+            <h1>Welcome to MSU Game Design Club</h1>
+
+			<p>A club focused on building, collaberation, and celebration of game design</p>
 			<a href="#about" class="cta-button">Learn More</a>
 		</div>
 	</section>
@@ -37,37 +39,10 @@
 		<section id="about" class="section">
 			<h2 class="section-title">About Us</h2>
 			<div class="about-content">
-				<p>The Game Design Club at Morehead State University creates a safe, collaborative space for students from all backgrounds to discuss game design and development. Whether you're interested in programming, art, storytelling, or sound design, our club encourages both casual discussion and hands-on development.</p>
-				<br>
-				<p>We provide members with opportunities to create self-managed projects and walk away with tangible proof of their work—perfect for building your portfolio and gaining real-world experience.</p>
-			</div>
-		</section>
+				<p>The Game Design Club at Morehead State University aims to creates a safe, open space for students from all backgrounds to discuss and participate in game design and development. Whether you're interested in programming, art, storytelling, or sound design, our club encourages .</p>
 
-		<section id="goals" class="section">
-			<h2 class="section-title">Our Goals</h2>
-			<div class="goals-grid">
-				<div class="goal-card">
-					<div class="icon"></div>
-					<h3>Explore All Aspects</h3>
-					<p>Create a welcoming environment for exploring the edges of gaming—from storytelling and programming to art and sound design.</p>
-				</div>
-				<div class="goal-card">
-					<div class="icon"></div>
-					<h3>Collaborate & Create</h3>
-					<p>Encourage members to collaborate on original projects and gain real-world experience through hands-on activities.</p>
-				</div>
-				<div class="goal-card">
-					<div class="icon"></div>
-					<h3>Build Community</h3>
-					<p>Foster a supportive community where students can enjoy creating games while growing as designers, developers, and leaders.</p>
-				</div>
-				<div class="goal-card">
-					<div class="icon"></div>
-					<h3>Portfolio Building</h3>
-					<p>Give members the opportunity to build real projects and present them on their resumes.</p>
-				</div>
 			</div>
-		</section>
+        </section>
 
 		<!-- Activities Section -->
 		<section id="activities" class="section">
@@ -75,13 +50,15 @@
 			<div class="activities-grid">
 				<div class="activity-card">
 					<div class="activity-icon"></div>
-					<h3>Game Jams</h3>
-					<p>Form teams and build small games around surprise prompts. Compete for prizes and celebrate your creativity in time-limited challenges.</p>
+                    <h3 text-align="">Game Jams</h3>
+                    <p> Build teams to build games around themes/prompts for prizes.
+                    </p>
 				</div>
 				<div class="activity-card">
 					<div class="activity-icon"></div>
-					<h3>Presentations</h3>
-					<p>Student and leader-led presentations exploring topics in game design—storytelling, programming, artistic design, and more.</p>
+                    <h3>Presentations</h3>
+
+					<p>Student and officer led presentations exploring topics in game design, storytelling, programming, artistic design, and more.</p>
 				</div>
 				<div class="activity-card">
 					<div class="activity-icon"></div>
@@ -90,8 +67,8 @@
 				</div>
 				<div class="activity-card">
 					<div class="activity-icon"></div>
-					<h3>Workshops</h3>
-					<p>Hands-on sessions focused on specific skills—scripting, level design, art, sound integration. Learn by doing and build your portfolio.</p>
+                    <h3>Workshops</h3>
+                    <p>Activities centered around building hands on experience with tools based in game design</p>
 				</div>
 			</div>
 		</section>
